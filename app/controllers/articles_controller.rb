@@ -17,7 +17,7 @@ class ArticlesController < ApplicationController
 	end
 
 	def edit
-	  @article = current_user.articles.build(params[:id])
+	  @article = Article.find(params[:id])
 	end
 
 	def create
